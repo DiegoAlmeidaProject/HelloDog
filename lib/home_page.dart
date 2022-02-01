@@ -16,9 +16,16 @@ class HomePage extends StatelessWidget {
 
   _body() {
     return Container(
-      child: Center(
-        child: _text(),
+      color: Colors.white,
+      child: SizedBox.expand(
+        child: _img(),
       ),
+    );
+  }
+
+  _img(){
+    return Image.asset("assets/images/dog1.png",
+      fit: BoxFit.cover,
     );
   }
 
